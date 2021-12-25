@@ -145,11 +145,11 @@ img {
   outline: 1px solid black;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), url('../images/hero.jpg'));
-
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
   text-align: center;
   color: var(--background-color);
-  /* background-color: #2f303a; */
+  background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -242,6 +242,35 @@ img {
 .features-item:last-child {
   margin-right: 0;
 }
+.features-item::before {
+  display: block;
+  content: '';
+  /* width: 270px; */
+  height: 120px;
+  outline: 1px solid red;
+  margin-bottom: 30px;
+
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-antenna::before {
+  background-image: url('../images/antenna.svg');
+}
+
+.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+
+.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
+}
 .features-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -294,6 +323,7 @@ img {
   text-align: center;
 }
 .team-list .text {
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -301,7 +331,28 @@ img {
 }
 .team-content {
   padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 32px;
+  margin-left: 32px;
+  width: 206px;
+}
+
+.icon-link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/instagram.svg);
+  background-color: var(--background-color);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 /* Футер */
 
