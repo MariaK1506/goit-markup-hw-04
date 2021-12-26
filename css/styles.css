@@ -340,10 +340,26 @@ img {
   justify-content: space-around;
   margin-right: 32px;
   margin-left: 32px;
+  padding: 0;
   width: 206px;
+  outline: 1px solid tomato;
+  list-style: none;
 }
 
-.icon-link {
+.icon-link .instagram,
+.icon-link .twitter,
+.icon-link .facebook,
+.icon-link .linkedin {
+  display: block;
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+}
+.icon-link.instagram:hover {
+  fill: var(--accent-color);
+}
+
+/* .icon-link {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -353,7 +369,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
+} */
 /* Футер */
 
 .footer {
