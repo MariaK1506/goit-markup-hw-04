@@ -362,25 +362,34 @@ img {
   justify-content: space-around;
   margin-right: 32px;
   margin-left: 32px;
-  padding: 0;
+  /* padding: 12px; */
+  
   width: 206px;
   height: 44px;
   outline: 1px solid tomato;
   list-style: none;
 }
 
-.icon-link .instagram,
-.icon-link .twitter,
-.icon-link .facebook,
-.icon-link .linkedin {
+.icon-link,
+.icon-link,
+.icon-link,
+.icon-link {
   display: block;
-  width: 20px;
-  height: 20px;
+  
+  /* margin-right: 10px; */
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
   fill: #AFB1B8;
-  /* fill: #fff; */
+  
   
 }
-
+.instagram, .twitter, .facebook, .linkedin {
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+}
 
 .icon-link:hover {
   fill: var(--accent-color);
