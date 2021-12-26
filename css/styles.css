@@ -354,9 +354,11 @@ img {
   width: 40px;
   height: 40px;
   fill: #fff;
+  /* stroke: #afb1b8; */
 }
-.icon-link.instagram:hover {
+.icon-link:hover {
   fill: var(--accent-color);
+  stroke: var(--background-color);
 }
 
 /* .icon-link {
