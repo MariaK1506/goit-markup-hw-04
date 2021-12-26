@@ -378,12 +378,13 @@ img {
   height: 20px;
   fill: #AFB1B8;
   /* fill: #fff; */
-  /* stroke: #afb1b8; */
+  
 }
+
 
 .icon-link:hover {
   fill: var(--accent-color);
-  /* stroke: var(--background-color); */
+  
 }
 
 /* .icon-link {
