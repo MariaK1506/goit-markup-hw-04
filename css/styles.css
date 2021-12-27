@@ -426,8 +426,8 @@ img {
 /* Футер */
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 66px;
+  padding-bottom: 54px;
 
   background-color: #2f303a;
   color: var(--background-color);
@@ -474,8 +474,8 @@ img {
 .footer-inner {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  /* max-width: 100%; */
+  align-items: flex-start;
+  
 }
 .adress-box {
   width: 231px;
@@ -484,6 +484,7 @@ img {
 .social-links-box {
   width: 206px;
   height: 80px;
+  margin-top: 12px;
   margin-left: 70px;
 }
 
@@ -499,10 +500,31 @@ img {
 
 .social-links-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  width: 206px;
+  height: 44px;
   margin: 0;
   padding: 0;
+  list-style: none;
+  /* margin-bottom: 30px; */
 }
+
+.icon-link-footer {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--background-color);
+}
+
+.icon-link-footer:hover, .icon-link-footer:focus {
+  background-color: var(--accent-color);
+    
+}
+
 
 /* СТИЛИ ДЛЯ Portfolio.html */
 
