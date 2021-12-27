@@ -5,6 +5,7 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --background-color: #ffffff;
+  --icon-color: #AFB1B8;
 }
 body {
   background-color: var(--background-color);
@@ -211,7 +212,7 @@ img {
 }
 .features-title,
 .work-title,
-.team-title {
+.team-title, .clients-title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -353,7 +354,7 @@ img {
 }
 .team-content {
   padding-top: 30px;
-  /* padding-bottom: 30px; */
+  
 }
 
 .social-links {
@@ -379,27 +380,49 @@ img {
 .icon-link {
   display: block;
   padding: 12px;
-  fill: #fff;
+  fill: var(--background-color);
   width: 44px;
   height: 44px;
-  background-color: #fff;
-  fill: #AFB1B8;
+  background-color: var(--background-color);
   border-radius: 50%;
+  color: var(--icon-color);
 }
 
 .icon-link:hover, .icon-link:focus {
   background-color: var(--accent-color);
+  color: var(--background-color);
   
 }
 .instagram, .twitter, .facebook, .linkedin {
-  fill: #AFB1B8;
+  fill: currentColor;
 }
 
-.instagram:hover, .twitter:hover, .facebook:hover, .linkedin:hover, .instagram:hover, .twitter:focus, .facebook:focus, .linkedin:focus {
-  fill: #FFFFFF;
+/* Постоянные клиенты */
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: var(--icon-color);
 }
 
+  .clients-link:hover, .clients-link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+  .icon-clients {
+    fill: currentColor;
+  }
 
+  
 /* Футер */
 
 .footer {
@@ -447,6 +470,40 @@ img {
 .footer .link:focus {
   color: var(--accent-color);
 }
+
+.footer-inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* max-width: 100%; */
+}
+.adress-box {
+  width: 231px;
+}
+
+.social-links-box {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+}
+
+.social-links-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color);
+}
+
+.social-links-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
 /* СТИЛИ ДЛЯ Portfolio.html */
 
 .projects-lists {
