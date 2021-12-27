@@ -137,15 +137,12 @@ img {
 }
 
 .icon-envelope, .icon-vector {
- fill: #757575;
+ fill: var(--secondary-text-color);
  margin-right: 10px;
 }
 .icon-envelope:hover, .icon-vector:hover {
-  fill: rgba(33, 150, 243, 1);
+  fill: var(--accent-color);
 }
-
-
-
 
 /* Hero */
 
@@ -154,7 +151,7 @@ img {
   padding-bottom: 200px;
   max-width: 1600px;
   height: 600px;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -363,22 +360,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 30px;
   margin-right: 32px;
   margin-left: 32px;
   width: 206px;
   height: 44px;
   list-style: none;
-  margin-bottom: 30px;
-
 }
 
 .social-item:not(:last-child){
   margin-right: 10px;
 }
 
-.icon-link,
-.icon-link,
-.icon-link,
 .icon-link {
   display: block;
   padding: 12px;
@@ -410,8 +403,9 @@ img {
   justify-content: center;
   align-items: center;
   width: 170px;
+  padding: 16px 32px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--icon-color);
   border-radius: 4px;
   color: var(--icon-color);
 }
@@ -454,6 +448,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
+
 .footer .link {
   display: block;
   margin-bottom: 9px;
@@ -464,6 +459,7 @@ img {
   line-height: 1.71;
   text-decoration: none;
 }
+
 .footer .link:last-child {
   margin-bottom: 0;
 }
@@ -485,7 +481,6 @@ img {
 
 .social-links-box {
   width: 206px;
-  height: 80px;
   margin-top: 12px;
   margin-left: 70px;
 }
@@ -509,7 +504,6 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  /* margin-bottom: 30px; */
 }
 
 .icon-link-footer {
@@ -542,12 +536,12 @@ img {
 .projects-lists .button:focus {
   color: var(--background-color);
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-lists .button {
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  
   background-color: #f5f4fa;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -572,6 +566,10 @@ img {
 .projects-item {
   width: 370px;
   margin: 15px;
+}
+
+.projects-item:hover, .projects-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ИЛИ МОЖНО СДЕЛАТЬ ТАК */
