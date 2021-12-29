@@ -138,17 +138,11 @@ img {
 
 .icon-envelope,
 .icon-vector {
-  fill: var(--secondary-text-color);
-  margin-right: 10px;
+  fill: currentColor;
 }
-
-/* .icon-envelope:hover,
-.icon-vector:hover {
-  fill: var(--accent-color); }*/
-
-.contact-nav .link:hover .icon-envelope,
-.contact-nav .link:hover .icon-vector {
-  fill: var(--accent-color);
+.icon-envelope,
+.icon-vector {
+  margin-right: 10px;
 }
 
 /* Hero */
