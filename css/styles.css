@@ -5,7 +5,7 @@
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
   --background-color: #ffffff;
-  --icon-color: #AFB1B8;
+  --icon-color: #afb1b8;
 }
 body {
   background-color: var(--background-color);
@@ -131,16 +131,22 @@ img {
   text-decoration: none;
 }
 
-.contact-nav .link:hover,
+/* .contact-nav .link:hover,
 .contact-nav .link:focus {
-  color: var(--accent-color);
+  color: var(--accent-color); }*/
+
+.icon-envelope,
+.icon-vector {
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
 }
 
-.icon-envelope, .icon-vector {
- fill: var(--secondary-text-color);
- margin-right: 10px;
-}
-.icon-envelope:hover, .icon-vector:hover {
+/* .icon-envelope:hover,
+.icon-vector:hover {
+  fill: var(--accent-color); }*/
+
+.contact-nav .link:hover .icon-envelope,
+.contact-nav .link:hover .icon-vector {
   fill: var(--accent-color);
 }
 
@@ -209,7 +215,8 @@ img {
 }
 .features-title,
 .work-title,
-.team-title, .clients-title {
+.team-title,
+.clients-title {
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -255,7 +262,7 @@ img {
   padding: 25px 100px;
   width: 270px;
   margin-bottom: 30px;
-    
+
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;
@@ -278,7 +285,6 @@ img {
 
 .icon-antenna::before {
   background-image: url('../images/antenna.svg'); */
-} */
 
 /* .icon-clock::before {
   background-image: url('../images/clock.svg');
@@ -291,6 +297,7 @@ img {
 .icon-astronaut::before {
   background-image: url('../images/astronaut.svg');
 } */
+
 .features-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -331,7 +338,8 @@ img {
   background-color: var(--background-color);
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -353,7 +361,6 @@ img {
 }
 .team-content {
   padding-top: 30px;
-  
 }
 
 .social-links {
@@ -368,7 +375,7 @@ img {
   list-style: none;
 }
 
-.social-item:not(:last-child){
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -383,12 +390,15 @@ img {
   color: var(--icon-color);
 }
 
-.icon-link:hover, .icon-link:focus {
+.icon-link:hover,
+.icon-link:focus {
   background-color: var(--accent-color);
   color: var(--background-color);
-  
 }
-.instagram, .twitter, .facebook, .linkedin {
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
   fill: currentColor;
 }
 
@@ -410,15 +420,15 @@ img {
   color: var(--icon-color);
 }
 
-  .clients-link:hover, .clients-link:focus {
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-  }
-  .icon-clients {
-    fill: currentColor;
-  }
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.icon-clients {
+  fill: currentColor;
+}
 
-  
 /* Футер */
 
 .footer {
@@ -473,7 +483,6 @@ img {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  
 }
 .adress-box {
   width: 231px;
@@ -516,11 +525,10 @@ img {
   color: var(--background-color);
 }
 
-.icon-link-footer:hover, .icon-link-footer:focus {
+.icon-link-footer:hover,
+.icon-link-footer:focus {
   background-color: var(--accent-color);
-    
 }
-
 
 /* СТИЛИ ДЛЯ Portfolio.html */
 
@@ -536,12 +544,13 @@ img {
 .projects-lists .button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-lists .button {
   border-radius: 4px;
-  
+
   background-color: #f5f4fa;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -568,8 +577,10 @@ img {
   margin: 15px;
 }
 
-.projects-item:hover, .projects-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ИЛИ МОЖНО СДЕЛАТЬ ТАК */
@@ -621,6 +632,3 @@ button {
   padding: 6px 22px;
   text-align: center;
 }
-
-
-
