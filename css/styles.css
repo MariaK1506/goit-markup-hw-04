@@ -131,9 +131,10 @@ img {
   text-decoration: none;
 }
 
-/* .contact-nav .link:hover,
+.contact-nav .link:hover,
 .contact-nav .link:focus {
-  color: var(--accent-color); }*/
+  color: var(--accent-color);
+}
 
 .icon-envelope,
 .icon-vector {
@@ -252,15 +253,18 @@ img {
   justify-content: space-between;
 }
 .features-item {
-  margin-right: 30px;
   width: 270px;
+  margin-right: 30px;
 }
 .features-item:last-child {
   margin-right: 0;
 }
 .features-icon {
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 270px;
+  height: 120px;
   margin-bottom: 30px;
 
   background-repeat: no-repeat;
