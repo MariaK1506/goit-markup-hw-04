@@ -384,8 +384,10 @@ img {
 }
 
 .icon-link {
-  display: block;
-  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   fill: var(--background-color);
   width: 44px;
   height: 44px;
@@ -417,7 +419,6 @@ img {
   justify-content: center;
   align-items: center;
   width: 170px;
-  padding: 16px 32px;
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
